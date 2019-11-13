@@ -20,6 +20,7 @@ flutter:
   assets:
    - assets/images/login_background.jpg
    - assets/images/menu_background.jpg
+   - assets/images/doge.jpg
 
   # fonts:
   #   - family: Schyler

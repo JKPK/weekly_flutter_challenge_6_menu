@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage>
   }
 
   void updateAnimation(double dx) {
-    _animationController.value += 2 * dx / MediaQuery.of(context).size.width;
+    _animationController.value += dx / MediaQuery.of(context).size.width;
   }
 
   @override
@@ -51,19 +51,30 @@ class _LoginPageState extends State<LoginPage>
           updateAnimation(pan.delta.dx);
         },
         onPanEnd: (_) {
-          if(_isLoggedIn){
-          _animationController.forward();
-          } else{
+          if (_isLoggedIn) {
+            _animationController.forward();
+          } else {
             _animationController.reverse();
           }
         },
         child: Stack(
           children: <Widget>[
-            Image(
-              image: AssetImage('assets/images/login_background.jpg'),
-              fit: BoxFit.cover,
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
+            Container(
+              decoration: new BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black54,
+                    blurRadius: 30.0,
+                    spreadRadius: 5.0,
+                  )
+                ],
+              ),
+              child: Image(
+                image: AssetImage('assets/images/login_background.jpg'),
+                fit: BoxFit.cover,
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+              ),
             ),
             Form(
               key: _loginFormKey,
