@@ -84,7 +84,7 @@ class _LoginPageState extends State<LoginPage>
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 30),
-                      height: MediaQuery.of(context).size.height * .07,
+                      height: MediaQuery.of(context).size.height * .1,
                       child: Center(
                         child: FlatButton(
                           textColor: Colors.grey,
@@ -112,12 +112,6 @@ class _LoginPageState extends State<LoginPage>
                                 FocusScope.of(context)
                                     .requestFocus(FocusNode());
                                 _animationController.forward();
-
-                                // Scaffold.of(context).showSnackBar(
-                                //   SnackBar(
-                                //     content: Text("Logged in"),
-                                //   ),
-                                // );
                               }
                             },
                             child: Text(
@@ -147,6 +141,7 @@ class _LoginPageState extends State<LoginPage>
                               ),
                               labelText: "Password"),
                           style: const TextStyle(
+                            letterSpacing: 7,
                             color: Colors.white,
                           ),
                           cursorColor: Colors.white,

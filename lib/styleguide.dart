@@ -20,4 +20,17 @@ const InputDecoration inputDecoration = const InputDecoration(
       color: Colors.white,
     ),
   ),
+  errorStyle: TextStyle(
+    color: Colors.white,
+  ),
+  errorBorder: UnderlineInputBorder(
+    borderSide: BorderSide(
+      color: Colors.white,
+    ),
+  ),
+  focusedErrorBorder: UnderlineInputBorder(
+    borderSide: BorderSide(
+      color: Colors.white,
+    ),
+  ),
 );

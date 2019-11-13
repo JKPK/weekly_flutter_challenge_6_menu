@@ -93,6 +93,7 @@ class MenuTile extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: 18,
+            fontWeight: FontWeight.w300,
             color: Colors.white,
           ),
         ),
