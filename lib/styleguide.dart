@@ -9,6 +9,7 @@ const InputDecoration inputDecoration = const InputDecoration(
   labelText: "Name",
   labelStyle: TextStyle(
     color: Colors.white,
+    letterSpacing: 1,
   ),
   enabledBorder: UnderlineInputBorder(
     borderSide: BorderSide(
