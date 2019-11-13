@@ -1,7 +1,8 @@
 # weekly_flutter_challenge_6_menu
 
-1. [TextField](https://api.flutter.dev/flutter/material/TextField-class.html).
+1. [Form](https://flutter.dev/docs/cookbook/forms/validation) widh [TextField](https://api.flutter.dev/flutter/material/TextField-class.html) & [TextFormField](https://api.flutter.dev/flutter/material/TextFormField-class.html).
 2. [Wrap](https://api.flutter.dev/flutter/widgets/Wrap-class.html).
+3. [SnackBar](https://api.flutter.dev/flutter/material/SnackBar-class.html)
 
 ## Original design
 Original design consists of two pages:
