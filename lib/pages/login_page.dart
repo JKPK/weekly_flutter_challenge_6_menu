@@ -21,31 +21,39 @@ class LoginPage extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
           ),
           Container(
-            child: Column(
+            child: Wrap(
+              verticalDirection: VerticalDirection.up,
               children: <Widget>[
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  height: MediaQuery.of(context).size.height * .07,
                   child: Center(
-                    child: Text(
-                      "Exploring\nworld".toUpperCase(),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        height: 1.5,
-                        color: Colors.white,
-                        fontSize: 30,
+                    child: FlatButton(
+                      textColor: Colors.grey,
+                      onPressed: () {},
+                      child: Text(
+                        "Create new account".toUpperCase(),
+                        style: TextStyle(fontSize: 14),
                       ),
                     ),
                   ),
-                  height: MediaQuery.of(context).size.height * .5,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 30),
+                  height: MediaQuery.of(context).size.height * .10,
                   child: Center(
-                    child: TextField(
-                      decoration: inputDecoration,
-                      style: const TextStyle(
-                        color: Colors.white,
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: MediaQuery.of(context).size.height * .055,
+                      child: RaisedButton(
+                        textColor: Colors.white,
+                        color: Color(0xFF4F99E3),
+                        onPressed: () {},
+                        child: Text(
+                          "login".toUpperCase(),
+                          style: TextStyle(fontSize: 17),
+                        ),
                       ),
-                      cursorColor: Colors.white,
                     ),
                   ),
                 ),
@@ -71,36 +79,29 @@ class LoginPage extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 30),
-                  height: MediaQuery.of(context).size.height * .10,
                   child: Center(
-                    child: SizedBox(
-                      width: double.infinity,
-                      height: MediaQuery.of(context).size.height * .055,
-                      child: RaisedButton(
-                        textColor: Colors.white,
-                        color: Color(0xFF4F99E3),
-                        onPressed: () {},
-                        child: Text(
-                          "login".toUpperCase(),
-                          style: TextStyle(fontSize: 17),
-                        ),
+                    child: TextField(
+                      decoration: inputDecoration,
+                      style: const TextStyle(
+                        color: Colors.white,
                       ),
+                      cursorColor: Colors.white,
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  height: MediaQuery.of(context).size.height * .07,
                   child: Center(
-                    child: FlatButton(
-                      textColor: Colors.grey,
-                      onPressed: () {},
-                      child: Text(
-                        "Create new account".toUpperCase(),
-                        style: TextStyle(fontSize: 14),
+                    child: Text(
+                      "Exploring\nworld".toUpperCase(),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        height: 1.5,
+                        color: Colors.white,
+                        fontSize: 30,
                       ),
                     ),
                   ),
+                  height: MediaQuery.of(context).size.height * .5,
                 ),
               ],
             ),
